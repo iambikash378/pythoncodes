@@ -5,7 +5,7 @@ def selection_sort(list_num):
     current_smallest = list_num[iter]
     smallest_index = iter
     for i in range(iter+1,list_len):
-      if list_num[i] < current_smallest:
+      if list_num[i] > current_smallest:
         #print(i,list_num[i], current_smallest)
         current_smallest = list_num[i]
         smallest_index = i
@@ -15,5 +15,5 @@ def selection_sort(list_num):
     #print(iter-1,list_num)
   return list_num
 
-list = [3,2]
+list = [1,2,3,4,5]
 print(selection_sort(list))
